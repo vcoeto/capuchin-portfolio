@@ -13,7 +13,9 @@ def mynavbar():
     return Navbar(
         'mysite',
         View('Home', 'index'),
-        View("Anthony", 'ant'),
+        View("About", 'about'),
+        View("Contact", 'contact'),
+        View("Projects", 'projects')
     )
 
 
