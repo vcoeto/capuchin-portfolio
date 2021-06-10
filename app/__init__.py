@@ -2,11 +2,14 @@ import os
 from flask import Flask, render_template, send_from_directory
 from dotenv import load_dotenv
 from .nav import nav
+from flask_bootstrap import Bootstrap
+
 
 load_dotenv()
 
 app = Flask(__name__)
 
+Bootstrap(app)
 nav.init_app(app)
 
 
@@ -27,4 +30,4 @@ def contact():
 
 @app.route('/projects')
 def projects():
-    return render_template('contact.html', title="Projects", url=os.getenv("URL"))
+    return render_template('projects.html', title="Projects", url=os.getenv("URL"))
