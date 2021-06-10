@@ -47,10 +47,11 @@ h1.title{
     margin-bottom: 15px;
     background-color: #000814;
     color: #FFD60A;
-    font-size: 50px;
-    text-align: center;   
-    font-style: bold;
-    padding: 10px;
+    font-size: 60px;
+    align-items: left;
+    padding: 50px;
+    padding-left: 10%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .none {
@@ -76,5 +77,28 @@ h1.title{
 hr{
     margin-left: 45% ;
     margin-right: 45% ;
-    margin-bottom:50px ;
+    margin-bottom:10px ;
+    margin-top:20px ;
+}
+
+
+.footer {
+    background-color: #000814;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer img{
+    height: 50px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;        
+    padding: 20px;
+    border-radius: 40px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
 }
