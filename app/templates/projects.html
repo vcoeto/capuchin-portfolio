@@ -13,8 +13,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- <link lang="sass" rel="stylesheet" href="./static/styles/main.css" /> -->
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}"> -->
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    
     <link rel="stylesheet" href="./static/styles/projects.css" />
     <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
     <title>{{ title }}</title>
@@ -26,7 +27,14 @@
 
       <div class="nav-content">
         <a href="/"> </a>
+        <div>cf</div>
       </div>
+
+      <!-- <div class="navbar">
+        <a href="#home">ABOUT</a>
+        <a href="#news">FAVOURITES</a>
+        <a href="#contact">CONTACTS</a>
+    </div> -->
     </header>
 
     <!-- <div class="profile">
@@ -34,7 +42,7 @@
         <img src="./static/img/logo.jpg" />
       </div>
       <h1 class="title">{{ title }}</h1> -->
-    <div class="container">
+    <div class="containerp">
       <div class="align-left">
         <h1>Projects.</h1>
         <h3>These are some projects I've worked on.</h3>
@@ -63,54 +71,56 @@
         </div>
       </div>
 
-      <hr>
     </div>
 
-    <div class="container">
-      <h5 class="center">
-        I’m a designer, based in San Francisco. Currently a freelancer. You can see my hobbies on @Jack-Co and some photos on me too.
-      </h5>
-    </div>
     
-    <hr>
-    <div class="footer">
-      <div>
-        <form action="/submited" onsubmit="python()">
-          <h5>Drop your info and we'll get in touch.</h5>
-          <!-- <label for="Name"></label> -->
-          <div>
-            <input type="text" name="name" id="name" placeholder="Your Name"/>
-          </div>
-          <div>
-            <input type="text" name="email" id="email" placeholder="Email"/>
-          </div>
-          <div>
-            <input type="text" name="subject" id="subject" placeholder="Subject"/>
-          </div>
-          <div>
-            <input type="text" name="Message" id="Message" placeholder="Message"/>
-          </div>
-          <div>
-            <input type="submit" class="btn" value="Send Message"/>
-          </div>
-        </form>
+    <footer>
+      <div class="containerp">
+        <h5>
+          I’m a Student, I'm currently enrolled in MLH Fellowship. Making this page is part of my introduction course and I love it!
+        </h5>
       </div>
-      
-      <div class="column">
-        <h3 id="contact">Contact Me</h3>
-        <p>4657 Franklin Avenue, ARCH CAPE</p>
-        <p>+555-555-5555</p>
-        <p>email@email.com</p>
-        <button>Download Resume</button>
-        <div class="row">
-          <img src="./static/img/logo.jpg" >
-          <img src="./static/img/logo.jpg" >
-          <img src="./static/img/logo.jpg" >
+      <hr>
+      <div class="footer">
+        <div>
+          <form action="/submited" onsubmit="python()">
+            <h5 id="containerh5">Drop your info and we'll get in touch.</h5>
+            <!-- <label for="Name"></label> -->
+            <div>
+              <input type="text" name="name" id="name" placeholder="Your Name"/>
+            </div>
+            <div>
+              <input type="text" name="email" id="email" placeholder="Email"/>
+            </div>
+            <div>
+              <input type="text" name="subject" id="subject" placeholder="Subject"/>
+            </div>
+            <div>
+              <input type="text" name="Message" id="Message" placeholder="Message"/>
+            </div>
+            <div>
+              <input type="submit" class="btnf" value="Send Message"/>
+            </div>
+          </form>
         </div>
+        
+        <div class="columnf">
+          <h3 id="contactf">Contact Me</h3>
+          <p>4657 Franklin Avenue, ARCH CAPE</p>
+          <p>+555-555-5555</p>
+          <p>email@email.com</p>
+          <button>Download Resume</button>
+          <div class="rowf">
+            <img src="./static/img/logo.jpg" >
+            <img src="./static/img/logo.jpg" >
+            <img src="./static/img/logo.jpg" >
+          </div>
+        </div>
+
       </div>
 
 
-    </div>
+    </footer>
 
 
 

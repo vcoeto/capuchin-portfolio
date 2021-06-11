@@ -7,6 +7,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
+#TODO NAVbar
 nav.init_app(app)
 
 
