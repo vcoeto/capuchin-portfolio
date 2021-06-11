@@ -306,3 +306,11 @@ h6 {
     max-width: 1300px;
   }
 }
+
+.bg-gold {
+  background-color: #1d539f !important;
+}
+
+.contact-me-header-text {
+  color: #ccaa00 !important;
+}
