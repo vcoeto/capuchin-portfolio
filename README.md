@@ -3,103 +3,62 @@ Team 4 - Capuchin Monkeys
 ---
 
 ##### Integrantes:
-1. **
+1. *Anthony Jimenez*
 2. *Victor Coeto*
-3. **
+3. *Joying yang*
 
 ---
-## 1. General Aspects
+## General Aspects
 
-This documents serves as a guide to the implementation of a flask application to the
+This documents serves as a guide to the implementation of a flask application to create a personal portfolio with different pages using html, css, bootstrap running on a flask server.
 
-### 1.1 Technical requirements
+### Technical requirements
 
 * Freedom of use
 * Use of Flask 
 
 
-### 1.2 Structure of the files
+### Structure of the files
 ```
-- / 			    # Raíz de todo el proyecto
-    - README.md		# Archivo con los datos del proyecto (este archivo)
-    - Google Cloud	# Carpeta con la solución para google app engine (Web app)
-    - api			# Carpeta con la solución de la API
-      -static       #Frontend css
-      -templates    #Frontend html and bootstrap
-      -main         #Backend de flask, mongodb y redis
-    - dbs			# Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-    - docs			# Carpeta con la documentación del proyecto
+- / 			        # Root of the project
+    -README.md		    # Description, usage and installation of the template
+    -License.txt        # Open Source License for ther project
+    -example.env        # Where the server of flask will run 
+    -License.txt        # Libraries required for the app to work
+    -app                # Where all the app components are located
+        -__init__.py    # Main flask file with the existing routes
+        -nav.py         # Python file for the navigation name
+        -templates	    # All HTML files
+        -static         # img, js and styles folders for the HTML
 ```
 
-### 1.3 Documentation
 
-
-
-## 2. Description
-
-
-
-### 2.1 Casos de negocio 
-    Para este proyecto se tomaron en cuenta los siguientes casos de negocio:
-
-        * El inicio de sesión de Hospital y Gobierno al igual que el registro de cada uno 
-        * El reparto de vacunas por parte del Gobierno hacia los Hospitales de su localidad 
-        * Los hospitales tienen un inventario con sus vacunas utilizadas, disponiples ya apartadas y pueden acepatar el reparto que hace el gobierno sumandolas a las vacunas disponibles.
-        * Los usuarios tienen la opción de llenar una forma para apartar una vacuna 
-
-## 3. Solución
-
-A continuación aparecen descritos los diferentes elementos que forman parte de la solución del proyecto.
-
-
-
-### 3.2 architecture
- 
-
-
-### 3.3 Frontend
+## Frontend
 * Bootstrap
 * HTML
 * CSS
-#### 3.3.1 Languges
-Interaction with html, backend with python files so we execute functions.
 
-#### 3.3.2 Framework
-El framework que se usa es Flask
-
-#### 3.3.3 Librerías de funciones o dependencias
-* Flask.- el framework de donde vienen las dependecias para hacer la parte web de la aplicación
-* jsonify.- Para objetos json 
-* request. -pedir template 
-* redirect.- mover al usuario entre los templates 
-* render_template.- Loads only the HTML 
-* url_for.- llamar las funciones de python en html
-* session.- crear sesiones y guardar sus datos
-* MongoClient.-  Conexión con mongodb
-* pymongo .- Conexión con mognodb y sus operaciones dentro de él 
-* ObjectId. - Se usa para identificar los objetos en html
-* bycript. - Hash de passwords 
-* os.- manipular los archivos.
-
-### 3.4 API o backend
-
-#### 3.4.1 Programming language 
-Python language
-
-#### 3.4.2 Framework
-Flask framework 
-
-#### 3.4.3 Libraries
-
-* Flask.- el framework de donde vienen las dependecias para hacer la parte web de la aplicación
-* jsonify.- Para objetos json 
-* request. -pedir template 
-* redirect.- mover al usuario entre los templates 
-* render_template.- cargar el html 
-* url_for.- llamar las funciones de python en html
+#### Libraries or dependencies
+* Bootstrap
 
 
-# 4 Installation & Usage
+## Backend
+* Python
+
+#### Libraries or dependencies
+* click==8.0.1
+* Flask==2.0.1
+* itsdangerous==2.0.1
+* Jinja2==3.0.1
+* MarkupSafe==2.0.1
+* python-dotenv==0.17.1
+* Werkzeug==2.0.1
+* flask_nav==0.6
+
+
+
+
+# Installation & Usage
 
 Make sure you have python3 and pip installed
 
@@ -121,7 +80,7 @@ set FLASK_ENV=development
 flask run
 ```
 
-## Linux 
+## Linux / Mac
 
 Creating the virtual environment
 ```
@@ -140,5 +99,5 @@ flask run
 ```
 
 
-## 4. References 
+## References 
 * https://flask-pymongo.readthedocs.io/en/latest/
