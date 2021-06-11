@@ -10,8 +10,11 @@
     <meta property="og:title" content="Personal Portfolio" />
     <meta property="og:description" content="My Personal Portfolio" />
     <meta property="og:url" content="{{ url }}" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -42,12 +45,14 @@
           <div class="col-lg-6 d-flex align-items-center intro" style="">
             <div style="width:34rem">
               <h1>Production Engineer.</h1>
-              <h3 class="mt-4">Hi, I am real Production Engineer. I really like production engineering.</h3>
+              <h3 class="mt-4 zuc">Hi, I am real Production Engineer. I really like production engineering.</h3>
               <a href="#"><button type="button" class="btn btn-white mt-5 pl-5 pr-5 pt-3 pb-3">HIRE ME.</button></a>
             </div>
           </div>
-          <div class="col-lg-6 d-flex justify-content-center headshot align-items-end" style="height:100%">
-              <img src="./static/img/zucc_pic.png" style="height:95%">
+          <div class="col-lg-6 d-none d-xl-block">
+              <div class="d-flex justify-content-center headshot align-items-end zuc" style="height:100%">
+                  <img src="./static/img/zucc_pic.png" style="height:95%">
+              </div>
           </div>
         </div>
       </div>
@@ -73,7 +78,7 @@
                  <h4>SKILL 1</h4>
                  <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  aria-valuemin="0" aria-valuemax="100" style="width:90%">
                   </div>
                 </div>
                </div>
@@ -89,7 +94,7 @@
                  <h4>SKILL 3</h4>
                  <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  aria-valuemin="0" aria-valuemax="100" style="width:50%">
                   </div>
                 </div>
                </div>
@@ -97,14 +102,16 @@
                  <h4>SKILL 4</h4>
                  <div class="progress">
                   <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  aria-valuemin="0" aria-valuemax="100" style="width:50%">
                   </div>
                 </div>
                </div>
              </div>
-             <div class="small-text" class="text-center">
-               As you can see, I do production engineering. In fact, I do so much production engineering, that I am making this website about
+             <div class="small-text" class="text-center align-items-center d-flex">
+               <div>
+                 As you can see, I do production engineering. In fact, I do so much production engineering, that I am making this website about
                how good I am at production engineering. TLDR, I'm fantastic at production engineering. Does your production need to be engineered? I'm your guy.
+              </div>
              </div>
            </div>
          </div>
@@ -120,8 +127,10 @@
            <div class="col-lg-6">
              <div style="background-color:#FFD60A; color:#001D3D" class="expertise-items">
                <h5>Skill 1</h5><br>
-               <h5>Skill 2</h5><br>
-               <h5>Skill 3</h5>
+               <h5 style="color: rgba(0, 0, 0, 0.5);">Skill 2</h5><br>
+               <h5 style="color: rgba(0, 0, 0, 0.5);">Skill 3</h5>
+               <div class="rectangle">
+               </div>
              </div>
            </div>
            <div class="col-lg-6 d-flex align-items-center">
@@ -178,13 +187,41 @@
          <img src="./static/img/b1.jpg" style="height:100%;width:95%">
        </div>
        <div class="col-lg-5 d-flex align-items-center">
-         <div class="quote">
+         <div class="quote" style="width:80%;">
            "Hello this says something cool. I help creative entrepreneurs build better businesses. Hehe. This says something really cool, and inspirational!"
          </div>
        </div>
      </div>
 
    </div>
+
+   <div style="background-color:#FFF">
+     <div class="container" style="padding-top:7rem; background-color:#FFF">
+       <div class=resume>
+         <h5>Education</h5>
+         <div class="resume-form">
+           <div class="resume-block">
+             <hr>
+             <div class="mt-4 job-title">Job Title</div>
+             <div class="mt-3 thin-small-text">Timeline</div>
+             <div class="mt-3 mb-3 thin-small-text">description.</div>
+           </div>
+           <div class="resume-block">
+             <hr>
+             <div class="mt-4 job-title">Job Title</div>
+             <div class="mt-3 thin-small-text">Timeline</div>
+             <div class="mt-3 mb-3 thin-small-text">description.</div>
+           </div>
+           <div class="resume-block">
+             <hr>
+             <div class="mt-4 job-title">Job Title</div>
+             <div class="mt-3 thin-small-text">Timeline</div>
+             <div class="mt-3 mb-3 thin-small-text">description.</div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
     <!-- <div class="profile">
       <div id="profile-picture" class="profile-picture">
         <img src="./static/img/logo.jpg" />
