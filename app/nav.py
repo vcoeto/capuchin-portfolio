@@ -11,7 +11,7 @@ nav = Nav()
 @nav.navigation()
 def mynavbar():
     return Navbar(
-        'capuchin-portfolio',
+        'mysite',
         View('Home', 'index'),
         View("About", 'about'),
         View("Contact", 'contact'),
