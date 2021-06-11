@@ -1,0 +1,285 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 2.1rem;
+  color: #ffd60a;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+}
+
+h4 {
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+h6 {
+  color: #ffd60a;
+}
+
+body {
+  background-color: #f5f5f9;
+  background-size: cover;
+  width: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  margin: 0px;
+}
+
+#intro {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about-myself {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+#about-blurb {
+  color: #001d3d;
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 4rem;
+}
+
+#about-card {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
+}
+
+.quote {
+  font-weight: 200;
+  color: white;
+  font-size: 2rem;
+}
+
+.quote-section {
+  padding-top: 8rem;
+}
+
+.thin-small-text {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.job-title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.resume-form {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+.resume {
+  padding-bottom: 7rem;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.expertise {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.expertise-items {
+  padding: 3rem;
+  margin-bottom: 0;
+  line-height: 2.4rem;
+}
+
+.skill-items {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.progress-bar {
+  background-color: #ffd60a;
+}
+
+.skills {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+.headshot {
+  margin-left: -5%;
+}
+
+.intro {
+  margin-right: -5%;
+}
+
+.btn-black {
+  border-radius: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #ffd60a;
+  border-color: white;
+}
+
+.btn-black:hover {
+  color: #fff;
+  background-color: transparent;
+  border-color: #001d3d;
+  color: #001d3d;
+}
+
+.btn-black:focus,
+.btn-white.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-white {
+  border-radius: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  font-size: 110%;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.btn-white:hover {
+  color: #fff;
+  background-color: white;
+  border-color: none;
+  color: #001d3d;
+}
+
+.btn-white:focus,
+.btn-white.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-bar {
+  width: 100%;
+  display: inline-block;
+  background-color: #1c539f;
+  font-family: "Roboto", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
+}
+
+.nav-content .logo-touch-target {
+  display: inline-flex;
+  height: 60%;
+  width: 350px;
+}
+
+.nav-content .nav-logo {
+  height: 60px;
+  margin: auto;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo img {
+  width: 200px;
+}
+
+.nav-content nav {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
+}
+
+.profile {
+  background-color: #1d539f !important;
+  text-align: center;
+  height: 320px;
+  margin-bottom: 50px;
+}
+
+.profile h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.profile img {
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
+}
+
+.profile .profile-picture {
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+.banner {
+  padding: 20px 0px 50px 0px;
+  height: 150px;
+  background-color: #1d539f;
+}
+
+.banner .logo {
+  max-width: 180px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.banner .title {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+.bg-gold {
+  background-color: #1d539f !important;
+}
+
+.contact-me-header-text {
+  color: #ccaa00 !important;
+}
