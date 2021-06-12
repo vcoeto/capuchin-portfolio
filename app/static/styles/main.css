@@ -223,33 +223,6 @@ h6 {
   outline: none;
   box-shadow: none;
 }
-.navbar {
-  overflow: hidden;
-  background-color: none;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  align-items: center;
-  display: inline-block;
-  text-align: center;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  color: black;
-  /* text-align: center; */
-  padding: 14px 16px;
-  font-style: bold;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: lightgrey;
-  color: white;
-}
 
 .profile {
   background-color: #1d539f !important;
@@ -325,6 +298,48 @@ h6 {
   color: #ffffff;
 }
 
+/* shared project css  */
+.align-left{
+  padding-left: 5%;
+}
+/* project page css */
+.project-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 15px;
+}
+
+.project-row img {
+  /* margin-bottom: 20px; */
+  height: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;        
+  padding: 20px;
+
+  /* position: relative;
+  overflow: hidden; */
+}
+.project-row img:hover{
+  background-color: #1d539f;
+  image-orientation: flip;
+
+  top: 48%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* footer css */
 .containerp {
   display: flex;
   align-items: center;
