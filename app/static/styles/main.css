@@ -213,46 +213,30 @@ h6 {
   outline: none;
   box-shadow: none;
 }
-/* 
-.nav-bar {
-  width: 100%;
-  display: inline-block;
-  background-color: #1c539f;
-  font-family: "Roboto", serif;
-  font-weight: 700 !important;
-  padding-top: 10px;
-}
-
-.nav-content {
-  display: flex;
-  flex-direction: row;
-  height: 60px;
-  width: 350px;
-  margin: auto;
-} */
 .navbar {
   overflow: hidden;
-  background-color: rgb(240, 240, 240);
-  position: fixed;
-  top: 0; 
-  width: 100%; 
+  background-color: none;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
   align-items: center;
   display: inline-block;
   text-align: center;
   
 }
 
-
+/* Links inside the navbar */
 .navbar a {
   color: black;
-
-  /* padding: 14px 16px; */
-  /* font-style: bold; */
+  /* text-align: center; */
+  padding: 14px 16px;
+  font-style: bold;
   text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   text-align: center;
 }
+
+/* Change background on mouse-over */
 .navbar a:hover {
   background: lightgrey;
   color: white;

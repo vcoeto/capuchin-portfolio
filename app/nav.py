@@ -5,8 +5,6 @@ from flask_nav.elements import Navbar, View
 # frontend-specific navbars in the respective frontend, but it is also possible
 # to put share navigational items in here.
 
-
-#TODO NAVBAR
 nav = Nav()
 
 
@@ -15,7 +13,7 @@ def mynavbar():
     return Navbar(
         'mysite',
         View('Home', 'index'),
-        View("About", 'about'),
+        # View("About", 'about'),
         View("Contact", 'contact'),
         View("Projects", 'projects')
     )
