@@ -16,8 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- <link lang="sass" rel="stylesheet" href="./static/styles/main.css" /> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
 
@@ -26,16 +24,25 @@
   </head>
 
   <body>
-    <!-- <header class="nav-bar">
-      {% block navbar %} {{nav.mynavbar.render()}} {% endblock %}
-      <div class="nav-content">
-        <a href="/">
-          <div class="nav-logo">
-            <img src="./static/img/logo.svg" />
-          </div>
-        </a>
-      </div> 
-    </header> -->
+    <header class="nav-bar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
     <div style="background-color:#001D3D; height:50rem" class="d-flex">
       <div class="container">
         <div class="row" style="height:100%">
@@ -230,7 +237,7 @@
       <hr>
       <div class="footer">
         <div>
-          <form action="/submited" onsubmit="python()">
+          <form action="/">
             <h5>Drop your info and we'll get in touch.</h5>
             <!-- <label for="Name"></label> -->
             <div>
