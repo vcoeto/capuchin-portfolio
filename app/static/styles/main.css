@@ -1,30 +1,28 @@
 * {
-    font-family: "Chivo", sans-serif;
+  font-family: "Chivo", sans-serif;
 }
 
 h1 {
-    font-family: 'Shippori Mincho', serif;
-    font-size:6rem;
-    color:#FFFFFF;
+  font-family: "Shippori Mincho", serif;
+  font-size: 6rem;
+  color: #ffffff;
 }
 
 h3 {
-    font-family: 'Chivo', sans-serif;
-    font-size:2.5rem;
-    color:#FFD60A;
-    font-weight:100;
-    letter-spacing:0.15rem;
-
+  font-family: "Chivo", sans-serif;
+  font-size: 2.5rem;
+  color: #ffd60a;
+  font-weight: 100;
+  letter-spacing: 0.15rem;
 }
 h5 {
-  font-family: 'Shippori Mincho', serif;
-  font-size:3rem;
+  font-family: "Shippori Mincho", serif;
+  font-size: 3rem;
 }
 
 h6 {
   color: #ffd60a;
 }
-
 
 #intro {
   width: 100%;
@@ -41,14 +39,13 @@ h6 {
 }
 
 #about-blurb {
-  color:#001D3D;
-  margin-left:170px;
-  margin-right:170px;
-  margin-top:20px;
-  margin-bottom:20px;
-  font-family: 'Shippori Mincho', serif;
-  line-height:4rem;
-
+  color: #001d3d;
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Shippori Mincho", serif;
+  line-height: 4rem;
 }
 
 #about-card {
@@ -58,49 +55,52 @@ h6 {
   margin-left: 6rem;
 }
 
-
 .zuc {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .progress .progress-bar {
-    animation-name: animateBar;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: .4s;
+  animation-name: animateBar;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.4s;
 }
 
 @keyframes animateBar {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(0);}
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .rectangle {
-    background-color:white;
-    width: 30px;
-    height: 30px;
-    top: 55px;
-    right:-4px;
-    position: absolute;
-    transform: rotate(45deg);
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  top: 55px;
+  right: -4px;
+  position: absolute;
+  transform: rotate(45deg);
 }
 
 .quote {
-     margin-left: 2rem;
-    font-weight:200;
-    color: white;
-    font-size:2.3rem;
+  margin-left: 2rem;
+  font-weight: 200;
+  color: white;
+  font-size: 2.3rem;
 }
 .quote-section {
   padding-top: 8rem;
@@ -112,9 +112,9 @@ h6 {
 }
 
 .job-title {
-  font-family: 'Shippori Mincho', serif;
-  font-size:2rem;
-  font-weight:300;
+  font-family: "Shippori Mincho", serif;
+  font-size: 2rem;
+  font-weight: 300;
 
   font-size: 2rem;
   font-weight: 300;
@@ -222,7 +222,6 @@ h6 {
   align-items: center;
   display: inline-block;
   text-align: center;
-  
 }
 
 /* Links inside the navbar */
@@ -241,9 +240,6 @@ h6 {
   background: lightgrey;
   color: white;
 }
-
-
-
 
 .profile {
   background-color: #1d539f !important;
@@ -306,45 +302,43 @@ h6 {
   color: #ccaa00 !important;
 }
 
-
 #contactf {
-  color: #FFD60A;
-  text-shadow:1px 1px 2px #CCAA00;
+  color: #ffd60a;
+  text-shadow: 1px 1px 2px #ccaa00;
 }
 
 .none {
   color: #000814;
-  color: #001D3D;
-  color: #CCAA00;
-  color: #FFD60A;
-  color: #FFFFFF;
+  color: #001d3d;
+  color: #ccaa00;
+  color: #ffd60a;
+  color: #ffffff;
 }
 
-.containerp{
+.containerp {
   display: flex;
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #001D3D;
+  background-color: #001d3d;
   display: block;
 }
 
-.containerp h5{
-  color: #FFFFFF;
+.containerp h5 {
+  color: #ffffff;
   text-align: center;
+  font-size: 3rem;
 }
-#containerh5{
-  font-size:40px;
-
-}
-
-hr{
-  margin-left: 10% ;
-  margin-right: 10% ;
-  margin-bottom:10px ;
-  margin-top:20px ;
+#containerh5 {
+  font-size: 40px;
 }
 
+hr {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 
 .footer {
   display: flex;
@@ -353,22 +347,23 @@ hr{
   flex-wrap: wrap;
 }
 
-.footer img{
+.footer img {
   height: 50px;
   max-width: 100%;
   max-height: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: block;        
+  display: block;
   padding: 20px;
   border-radius: 40px;
 }
 
-.footer h5{
+.footer h5 {
   color: #000814;
+  font-size: 2rem;
 }
 
-.footer div{
+.footer div {
   padding-left: 10%;
   padding-right: 10%;
   margin-bottom: 20px;
@@ -384,7 +379,8 @@ hr{
   align-items: flex-start;
 }
 
-button, .btnf{
+button,
+.btnf {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -394,10 +390,10 @@ button, .btnf{
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
-  cursor:pointer;
+  cursor: pointer;
 }
-input[type=text] {
-  font-family: 'Chivo', serif;
+input[type="text"] {
+  font-family: "Chivo", serif;
   font-size: 20px;
   padding-top: 5px;
   width: 100%;
