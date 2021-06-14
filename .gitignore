@@ -1,11 +1,7 @@
-.venv
+/venv
 __pycache__
 *.pyc
 .env
-<<<<<<< HEAD
-/python3-virtualenv
+python3-virtualenv
 .vscode
-/venv
-=======
-/python3-virtualenv
->>>>>>> 1a06071460d503d920e3e904f55919d6f8b05bf5
+venv
