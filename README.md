@@ -2,7 +2,7 @@
 Team 4 - Capuchin Monkeys
 ---
 
-##### Integrantes:
+##### Participants:
 1. *Anthony Jimenez*
 2. *Victor Coeto*
 3. *Joying yang*
