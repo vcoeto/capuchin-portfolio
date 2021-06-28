@@ -58,8 +58,8 @@ def register():
         else:
             return error, 418
 
-    ## TODO: Return a restister page
-    return "Register Page not yet implemented", 501
+    
+    return render_template('register.html', title="Register", url=os.getenv("URL"))
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
@@ -82,8 +82,7 @@ def login():
         else:
             return error, 418
     
-    ## TODO: Return a login page
-    return "Login Page not yet implemented", 501
+    return render_template('login.html', title="Login", url=os.getenv("URL"))
 
 @app.route('/health')
 def health():
