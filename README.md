@@ -102,7 +102,7 @@ flask run
 
 for this part we will be using the dockerfile, it's important to have this information: 
 
-´´´
+```
 FROM python:3.8-slim-buster
 
 RUN mkdir /myportfolio
@@ -111,16 +111,26 @@ WORKDIR /myportfolio
 RUN pip3 install -r requirements.txt
 COPY . /myportfolio
 CMD [ "gunicorn", "wsgi:app", "-w 4", "-b 0.0.0.0:80" ]
-´´´
+```
 Also remove from the requirements dataclases, if exists. After having that docker file we'll run these commands to create the container and then run it. 
 
-´´´
+```
 docker build -t myportfolio:0.0.1 .
-´´´
+```
 
-´´´
+```
 docker run -p 81:80 myportfolio:0.0.1
-´´´
+```
 NOW IT WILL BE ACCESSIBLE FROM http://127.0.0.1:81/
+
+If we want to use the docker compose is with 
+
+```
+docker-compose up --build 
+```
+the migrations folder is done by the command to use the sqlalchemy
+``` 
+flask db init
+```
 ## References 
 * https://flask-pymongo.readthedocs.io/en/latest/
