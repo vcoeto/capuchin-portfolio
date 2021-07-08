@@ -1,7 +1,7 @@
 import os
 # from types import MethodDescriptorType
-from flask import Flask, render_template, send_from_directory, request
-from dotenv import load_dotenv
+from flask import Flask, render_template, request
+# from dotenv import load_dotenv
 from werkzeug.security import generate_password_hash, check_password_hash
 # from . import db
 # load_dotenv()
@@ -65,7 +65,6 @@ def register():
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
-        db = get_db()
         error = None
 
         if not username:
