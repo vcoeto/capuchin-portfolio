@@ -3,11 +3,11 @@ on:
   # Triggers workflow on push or pull request, only main branch
   push:
     branches:
-      - main
+      - master
   
   pull_request: 
     branches:
-      - main
+      - master
    
 jobs: 
   run-linters: 
