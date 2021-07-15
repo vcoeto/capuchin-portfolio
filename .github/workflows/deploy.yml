@@ -1,19 +1,19 @@
 name: Deploy
- 
+
 on:
- push:
-   branches:
-     - master
+  push:
+    branches:
+      - master
 #workflow works with a button from git so we can trigger it manually
- workflow_dispatch:
+  workflow_dispatch:
   
 jobs:
- deploy:
-   name: "Deploy to AWS EC2 Virtual Machine"
-   runs-on: ubuntu-latest
-   steps:
-     - name: Configure SSH
-       run: |
+  deploy:
+    name: "Deploy to AWS EC2 Virtual Machine"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Configure SSH
+      run: |
          mkdir -p ~/.ssh/
          echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy-key.pem
          chmod 600 ~/.ssh/deploy-key.pem
@@ -24,16 +24,16 @@ jobs:
            IdentityFile ~/.ssh/deploy-key.pem
            StrictHostKeyChecking no
          END
-       env:
-         SSH_USER: ${{ secrets.SSH_USER }}
-         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-         SSH_IP: ${{ secrets.SSH_IP }}
+      env:
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_IP: ${{ secrets.SSH_IP }}
     
-     - name: Deploy site
-       run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/master && docker-compose up -d --build'
+      - name: Deploy site
+        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/master && docker-compose up -d --build'
 
-    - name: print created containers
-       run: docker-compose ps 
+      - name: print created containers
+        run: docker-compose ps 
     
-    - name: discord message bot
-       run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
+      - name: discord message bot
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
