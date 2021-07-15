@@ -1,5 +1,5 @@
 domain='https://vcoeto.duckdns.org'
-endpoints=("/" "/register" "/login" "/contact" "projects" "/health")
+endpoints=("/" "/register" "/login" "/contact" "/projects" "/health")
 error=0
 for endpoint in "${endpoints[@]}"
 do
