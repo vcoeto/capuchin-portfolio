@@ -1,3 +1,4 @@
+#!/bin/bash
 domain='https://vcoeto.duckdns.org'
 endpoints=("/" "/register" "/login" "/contact" "/projects" "/health")
 error=0
